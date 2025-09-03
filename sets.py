@@ -97,3 +97,4 @@ string_ex = 'I am a teacher and I love to inspire and teach people'
 lst = string_ex.split()
 st = set(lst)
 print(len(st)) #prints the unique words of the initial sentence
+
