@@ -203,7 +203,7 @@ stacked_horizontal = np.hstack((a,b)) #uno a fianco all'altro
 a = np.array([4., 2.])
 b = np.array([3., 8.])
 
-column_stacked = np.column_stack((a, b)) #for 2D is equivalent to hstack, for 1D first transforms the array in a acolumn and then stack them together
+column_stacked = np.column_stack((a, b)) #for 2D is equivalent to hstack, for 1D first transforms the array in a column and then stack them together
 # --> [[4., 3.],
      #[2., 8.]]
 
@@ -218,7 +218,7 @@ from_row_to_column = a[:, newaxis]
 
 #!STACKING ALONG ONE AXIS
 a = np.arange(9).reshape(3,3)
-one_row = np.r_[a.ravel(), 0, 4]
+one_row = np.r_[a.ravel(), 0, 4] #0 e 4 aggiunti in coda
 print(one_row)
 
 #!SPLITTING ARRAY

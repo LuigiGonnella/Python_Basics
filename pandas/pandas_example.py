@@ -117,7 +117,7 @@ def remean_ponts(row):
     row['points'] = row['points'] - points_mean
     return row
 
-reviews.apply(remean_ponts, axis = 'columns') #pass to the function each ROW, returning a NEW dataframe without modifying the original one
+reviews.apply(remean_ponts, axis = 'columns') #!pass to the function each ROW, returning a NEW dataframe without modifying the original one
 #reviews.apply(..., axis = 'index') pass to the function each COLUMN
 
 #a faster way is
